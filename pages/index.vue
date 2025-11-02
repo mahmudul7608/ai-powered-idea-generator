@@ -65,10 +65,7 @@
         <!-- Compact Controls Row -->
         <div class="flex flex-wrap items-center justify-center gap-2 mb-4">
           <!-- Language Dropdown -->
-          <select
-            v-model="language"
-            class="px-3 py-2 text-sm bg-gray-700/40 text-gray-300 border border-gray-600/50 rounded-lg focus:ring-2 focus:ring-indigo-500/50 outline-none transition-all cursor-pointer hover:bg-gray-700/60"
-          >
+          <select v-model="language" class="select-dark">
             <option value="English">🌐 English</option>
             <option value="Spanish">🌐 Spanish</option>
             <option value="French">🌐 French</option>
@@ -77,15 +74,12 @@
           </select>
 
           <!-- Tone Dropdown -->
-          <select
-            v-model="tone"
-            class="px-3 py-2 text-sm bg-gray-700/40 text-gray-300 border border-gray-600/50 rounded-lg focus:ring-2 focus:ring-indigo-500/50 outline-none transition-all cursor-pointer hover:bg-gray-700/60"
-          >
-            <option value="Neutral">😐 Neutral</option>
-            <option value="Professional">💼 Professional</option>
-            <option value="Casual">😊 Casual</option>
-            <option value="Enthusiastic">🎉 Enthusiastic</option>
-            <option value="Academic">🎓 Academic</option>
+          <select v-model="tone" class="select-dark">
+            <option value="Neutral">Neutral</option>
+            <option value="Professional">Professional</option>
+            <option value="Casual">Casual</option>
+            <option value="Enthusiastic">Enthusiastic</option>
+            <option value="Academic">Academic</option>
           </select>
 
           <!-- Model Selector -->

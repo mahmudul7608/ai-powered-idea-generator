@@ -8,17 +8,20 @@
       @copy="handleCopy"
     />
 
-    <!-- Features -->
-    <FeaturesSection :features="currentIdea.features" />
+    <!-- Simple stacked sections without grid/flex at page level -->
+    <div class="max-w-5xl mx-auto space-y-6">
+      <!-- Features -->
+      <FeaturesSection :features="currentIdea.features" />
 
-    <!-- Tech Stack -->
-    <TechStackSection :tech-stack="currentIdea.techStack" />
+      <!-- Tech Stack -->
+      <TechStackSection :tech-stack="currentIdea.techStack" />
 
-    <!-- Roadmap -->
-    <RoadmapSection :roadmap="currentIdea.roadmap" />
+      <!-- Roadmap -->
+      <RoadmapSection :roadmap="currentIdea.roadmap" />
 
-    <!-- UI Layout -->
-    <UILayoutSection :ui-layout="currentIdea.uiLayout" />
+      <!-- UI Layout -->
+      <UILayoutSection :ui-layout="currentIdea.uiLayout" />
+    </div>
 
     <!-- Action buttons -->
     <div class="flex gap-4 justify-center py-8">

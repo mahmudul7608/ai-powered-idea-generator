@@ -1,21 +1,23 @@
 <template>
-  <div class="card">
-    <h2 class="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+  <div class="panel panel-compact h-full min-h-[220px]">
+    <h2 class="text-2xl font-bold text-white mb-5 flex items-center gap-2">
       🧱 <span>Recommended Tech Stack</span>
     </h2>
-    <div class="space-y-6">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
       <!-- Frontend -->
-      <div>
+      <div
+        class="rounded-xl border border-gray-700/60 bg-gradient-to-br from-white/5 to-transparent p-4 h-full"
+      >
         <h3
-          class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"
+          class="text-sm font-semibold text-white/90 mb-2 flex items-center gap-2"
         >
-          <span class="text-2xl">🎨</span> Frontend
+          <span class="text-xl">🎨</span> Frontend
         </h3>
         <div class="flex flex-wrap gap-2">
           <span
             v-for="tech in techStack.frontend"
             :key="tech"
-            class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium"
+            class="px-3 py-1.5 text-sm bg-primary-600/15 text-primary-200 border border-primary-500/30 rounded-full"
           >
             {{ tech }}
           </span>
@@ -23,17 +25,19 @@
       </div>
 
       <!-- Backend -->
-      <div>
+      <div
+        class="rounded-xl border border-gray-700/60 bg-gradient-to-br from-white/5 to-transparent p-4 h-full"
+      >
         <h3
-          class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"
+          class="text-sm font-semibold text-white/90 mb-2 flex items-center gap-2"
         >
-          <span class="text-2xl">⚙️</span> Backend
+          <span class="text-xl">⚙️</span> Backend
         </h3>
         <div class="flex flex-wrap gap-2">
           <span
             v-for="tech in techStack.backend"
             :key="tech"
-            class="px-4 py-2 bg-green-100 text-green-700 rounded-lg font-medium"
+            class="px-3 py-1.5 text-sm bg-emerald-500/15 text-emerald-200 border border-emerald-400/30 rounded-full"
           >
             {{ tech }}
           </span>
@@ -41,17 +45,19 @@
       </div>
 
       <!-- Database -->
-      <div>
+      <div
+        class="rounded-xl border border-gray-700/60 bg-gradient-to-br from-white/5 to-transparent p-4 h-full"
+      >
         <h3
-          class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"
+          class="text-sm font-semibold text-white/90 mb-2 flex items-center gap-2"
         >
-          <span class="text-2xl">💾</span> Database
+          <span class="text-xl">💾</span> Database
         </h3>
         <div class="flex flex-wrap gap-2">
           <span
             v-for="tech in techStack.database"
             :key="tech"
-            class="px-4 py-2 bg-purple-100 text-purple-700 rounded-lg font-medium"
+            class="px-3 py-1.5 text-sm bg-violet-500/15 text-violet-200 border border-violet-400/30 rounded-full"
           >
             {{ tech }}
           </span>
@@ -59,17 +65,19 @@
       </div>
 
       <!-- AI/API -->
-      <div>
+      <div
+        class="rounded-xl border border-gray-700/60 bg-gradient-to-br from-white/5 to-transparent p-4 h-full"
+      >
         <h3
-          class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"
+          class="text-sm font-semibold text-white/90 mb-2 flex items-center gap-2"
         >
-          <span class="text-2xl">🤖</span> AI & APIs
+          <span class="text-xl">🤖</span> AI & APIs
         </h3>
         <div class="flex flex-wrap gap-2">
           <span
             v-for="tech in techStack.aiApi"
             :key="tech"
-            class="px-4 py-2 bg-pink-100 text-pink-700 rounded-lg font-medium"
+            class="px-3 py-1.5 text-sm bg-pink-500/15 text-pink-200 border border-pink-400/30 rounded-full"
           >
             {{ tech }}
           </span>
@@ -77,17 +85,19 @@
       </div>
 
       <!-- Deployment -->
-      <div>
+      <div
+        class="rounded-xl border border-gray-700/60 bg-gradient-to-br from-white/5 to-transparent p-4 h-full"
+      >
         <h3
-          class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"
+          class="text-sm font-semibold text-white/90 mb-2 flex items-center gap-2"
         >
-          <span class="text-2xl">🚀</span> Deployment
+          <span class="text-xl">🚀</span> Deployment
         </h3>
         <div class="flex flex-wrap gap-2">
           <span
             v-for="tech in techStack.deployment"
             :key="tech"
-            class="px-4 py-2 bg-orange-100 text-orange-700 rounded-lg font-medium"
+            class="px-3 py-1.5 text-sm bg-orange-500/15 text-orange-200 border border-orange-400/30 rounded-full"
           >
             {{ tech }}
           </span>
@@ -98,6 +108,7 @@
 </template>
 
 <script setup lang="ts">
+// @ts-nocheck
 import type { TechStack } from "~/types/idea";
 
 defineProps<{

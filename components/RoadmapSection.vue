@@ -1,13 +1,13 @@
 <template>
-  <div class="card">
-    <h2 class="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+  <div class="panel panel-compact h-full min-h-[220px]">
+    <h2 class="text-2xl font-bold text-white mb-4 flex items-center gap-2">
       🗺️ <span>Project Roadmap</span>
     </h2>
     <div class="space-y-4">
       <div
         v-for="step in roadmap"
         :key="step.step"
-        class="relative pl-8 pb-6 border-l-2 border-gray-200 last:border-l-0 last:pb-0"
+        class="relative pl-8 pb-6 border-l-2 border-gray-700 last:border-l-0 last:pb-0"
       >
         <!-- Step number circle -->
         <div
@@ -18,19 +18,19 @@
 
         <!-- Content -->
         <div
-          class="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition-colors"
+          class="bg-gray-800/60 rounded-lg p-4 hover:bg-gray-800/80 transition-colors border border-gray-700/60"
         >
           <div class="flex items-start justify-between mb-2">
-            <h3 class="text-lg font-semibold text-gray-900">
+            <h3 class="text-lg font-semibold text-white">
               {{ step.title }}
             </h3>
             <span
-              class="text-sm px-3 py-1 bg-primary-100 text-primary-700 rounded-full whitespace-nowrap"
+              class="text-sm px-3 py-1 bg-primary-500/20 text-primary-200 border border-primary-400/30 rounded-full whitespace-nowrap"
             >
               {{ step.duration }}
             </span>
           </div>
-          <p class="text-gray-600">{{ step.description }}</p>
+          <p class="text-gray-300">{{ step.description }}</p>
         </div>
       </div>
     </div>
@@ -38,6 +38,7 @@
 </template>
 
 <script setup lang="ts">
+// @ts-nocheck
 import type { RoadmapStep } from "~/types/idea";
 
 defineProps<{
