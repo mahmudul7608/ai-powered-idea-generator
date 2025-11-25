@@ -1,9 +1,6 @@
 <template>
   <!-- Modern Glassmorphism Navbar -->
-  <nav
-    class="fixed top-4 left-4 right-4 z-50 transition-all duration-300"
-    :class="{ 'top-2': scrolled }"
-  >
+  <nav class="fixed top-4 left-4 right-4 z-50">
     <div
       class="max-w-7xl mx-auto px-4 md:px-6 py-3 rounded-2xl backdrop-blur-xl bg-gradient-to-r from-gray-900/70 via-gray-800/70 to-gray-900/70 border border-white/10 shadow-2xl transition-all duration-300"
       style="box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 1px rgba(255, 255, 255, 0.1) inset;"
@@ -33,7 +30,7 @@
           </div>
         </NuxtLink>
 
-        <!--Action Buttons -->
+        <!-- Action Buttons -->
         <div class="flex items-center space-x-3">
           <!-- Sign Up Button - Outlined Style -->
           <NuxtLink
@@ -195,7 +192,6 @@
 <script setup lang="ts">
 // Dropdown state
 const isDropdownOpen = ref(false);
-const scrolled = ref(false);
 
 // User data
 const userName = ref("Mahmudul Hasan");
@@ -224,11 +220,4 @@ const handleLogout = () => {
   closeDropdown();
   console.log("Logging out...");
 };
-
-// Scroll effect
-if (process.client) {
-  window.addEventListener("scroll", () => {
-    scrolled.value = window.scrollY > 20;
-  });
-}
 </script>

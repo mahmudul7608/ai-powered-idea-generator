@@ -110,7 +110,7 @@ definePageMeta({
   layout: "landing",
 });
 
-const { generateIdea, generateRandomIdea, loading } = useAIGenerator();
+const { generateIdea, loading } = useAIGenerator();
 const { currentIdea } = useProjectIdeas();
 const router = useRouter();
 
