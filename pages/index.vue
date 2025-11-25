@@ -2,7 +2,7 @@
   <div class="min-h-screen flex items-center justify-center px-4">
     <!-- Hero Section with Input Only -->
     <div class="relative text-center py-8 md:py-12 max-w-5xl w-full mx-auto">
-      <!-- Free AI Tools Button -->
+      <!-- Free Idea Generator Button -->
       <div class="mb-6">
         <button
           class="inline-flex items-center gap-2 px-5 py-2.5 bg-white hover:bg-gray-100 text-gray-800 font-medium rounded-full transition-all shadow-lg hover:shadow-xl hover:scale-105"
@@ -12,7 +12,7 @@
             alt="AI Idea"
             class="w-5 h-5 rounded object-cover"
           />
-          <span>Free AI Tools</span>
+          <span>Free Idea Generator</span>
         </button>
       </div>
 
