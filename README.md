@@ -1,4 +1,4 @@
-# 🧠 AI Idea Generator
+#  AI Idea Generator
 
 <img width="1898" height="871" alt="image" src="https://github.com/user-attachments/assets/b5643e06-74cd-483e-ab18-4be6c47c4e35" /> 
 
@@ -9,17 +9,17 @@ live view : https://ai-powered-idea-generator.netlify.app/
 
 Transform your vision into a complete project plan with AI! A modern, professional web application built with Nuxt 3 and Tailwind CSS.
 
-## ✨ Features
+##  Features
 
-- 💡 **AI-Powered Ideas** - Generate refined project concepts from simple prompts
-- ⚙️ **Feature Breakdown** - Get detailed feature lists for your project
-- 🧱 **Tech Stack** - Receive technology recommendations
-- 🗺️ **Project Roadmap** - Step-by-step development plan
-- 🎨 **UI Layout** - Layout structure suggestions
-- 💾 **Save & Share** - Save ideas and share with others
-- 📱 **Fully Responsive** - Works on mobile, tablet, and desktop
+-  **AI-Powered Ideas** - Generate refined project concepts from simple prompts
+-  **Feature Breakdown** - Get detailed feature lists for your project
+-  **Tech Stack** - Receive technology recommendations
+-  **Project Roadmap** - Step-by-step development plan
+-  **UI Layout** - Layout structure suggestions
+-  **Save & Share** - Save ideas and share with others
+-  **Fully Responsive** - Works on mobile, tablet, and desktop
 
-## 🚀 Quick Start
+##  Quick Start
 
 ```bash
 # Install dependencies
@@ -32,7 +32,7 @@ yarn dev
 yarn build
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 .
@@ -69,21 +69,21 @@ yarn build
 └── nuxt.config.ts             # Nuxt config
 ```
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Frontend**: Nuxt 3, Vue 3, TypeScript
 - **Styling**: Tailwind CSS
 - **Storage**: LocalStorage
 - **Icons**: SVG + Emoji
 
-## 🎨 Design Features
+##  Design Features
 
 - Modern dark theme with glassmorphism
 - Smooth animations and transitions
 - Professional gradient accents
 - Responsive design for all devices
 
-## 📝 License
+##  License
 
 Free to use and modify!
 
